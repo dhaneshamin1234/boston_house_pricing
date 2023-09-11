@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+}
+
+.full-height-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(./city.jpg);
+}
+
+.custom-card {
+    max-width: 400px;
+    opacity: 0.9;
+}
+
+/* Add margin to the button */
+.custom-button {
+    margin-top: 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}

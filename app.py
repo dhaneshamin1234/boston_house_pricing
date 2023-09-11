@@ -32,14 +32,18 @@ def predict_api():
     return jsonify(output[0])
 
 
-@app.route('/predict', methods=['POST'])
-def predict():
+@app.route('/predict2', methods=['POST'])
+def predict2():
+    print(request.form.values())
     data = [float(x) for x in request.form.values()]
+    print(data)
     final_input = scaler.transform(np.array(data).reshape(1, -1))
-    print(final_input)
+    # print(final_input)
     output = rfr_model.predict(final_input)[0]
+    output = round(output)
+    print(output)
     # print('test', rfr_model.predict(final_input))
-    return render_template("home.html", prediction_text="The House price prediction is {}".format(output))
+    return jsonify(output)
 
 
 if __name__ == "__main__":
