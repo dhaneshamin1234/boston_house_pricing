@@ -14,3 +14,11 @@ Create a new environment
 ```
 conda create -p venv python==3.9 -y
 ```
+
+### App Demo:
+
+https://boston-price-prediction-e4373b3e18c8.herokuapp.com/
+
+![plot](./Screenshot.png)
+
+![plot](./Screenshot2.png)
